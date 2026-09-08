@@ -1,66 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="google-site-verification" content="fKM21w6DcKD_6bkxuQZXBIJAaLodYE2u_wWycO4I3gM" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crown & Time | Jewelry & Watches</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,sans-serif;background:#fffaf2;color:#222;line-height:1.6}
-    header{background:linear-gradient(135deg,#111,#3a2a10);color:#fff;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px}
-    .logo{font-size:26px;font-weight:700;color:#f5c85b}
-    nav a{color:#fff;text-decoration:none;margin-left:20px}
-    .hero{text-align:center;padding:80px 20px;background:linear-gradient(135deg,#fff1c9,#f8d77d)}
-    .hero h1{font-size:48px;margin-bottom:12px}
-    .hero p{font-size:20px;margin-bottom:25px}
-    .btn{display:inline-block;background:#111;color:#fff;padding:13px 25px;border-radius:8px;text-decoration:none;font-weight:700}
-    section{padding:55px 7%}
-    .title{text-align:center;margin-bottom:30px;font-size:32px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-    .card{background:#fff;padding:25px;border-radius:15px;text-align:center;box-shadow:0 5px 18px #0001}
-    .icon{font-size:55px;margin-bottom:12px}
-    .card h3{margin-bottom:8px}
-    .contact{text-align:center;background:#171717;color:#fff}
-    .contact a{color:#f5c85b;text-decoration:none;font-weight:700}
-    footer{text-align:center;padding:18px;background:#0d0d0d;color:#bbb}
-    @media(max-width:600px){header{flex-direction:column}.hero h1{font-size:36px}nav a{margin:0 8px;font-size:14px}}
-  </style>
+<head>
+<meta name="google-site-verification" content="fKM21w5DcKD_6bkxuQZXBIJAalOdYE2u_wWycO4l3gM" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crown & Time | Jewelry & Watches</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{
+font-family:Arial,sans-serif;
+background:#f8f6f1;
+color:#171717;
+}
+
+header{
+background:#111;
+color:white;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:14px;
+}
+
+.hero{
+min-height:75vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(135deg,#111,#42351d);
+color:white;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:28px;
+color:#eee;
+}
+
+.btn{
+display:inline-block;
+background:#d4af37;
+color:#111;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:70px 7%;
+}
+
+.title{
+text-align:center;
+font-size:34px;
+margin-bottom:12px;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
+}
+
+.card{
+background:white;
+padding:40px 20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.icon{
+font-size:55px;
+margin-bottom:18px;
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.card p{
+color:#666;
+line-height:1.6;
+}
+
+.about{
+background:#111;
+color:white;
+text-align:center;
+}
+
+.about p{
+max-width:700px;
+margin:20px auto;
+line-height:1.8;
+color:#ddd;
+}
+
+.contact{
+text-align:center;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:25px;
+padding:15px 28px;
+background:#25D366;
+color:white;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#080808;
+color:#aaa;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:600px){
+header{
+flex-direction:column;
+gap:12px;
+}
+nav a{
+margin:0 7px;
+}
+.hero h1{
+font-size:38px;
+}
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <div class="logo">👑 Crown & Time</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
-      <h1>Jewelry & Watches</h1>
-      <p>Elegant styles. Timeless quality. Made to shine.</p>
-      <a class="btn" href="#shop">Explore Collection</a>
-    </section>
+<header>
+<div class="logo">CROWN & TIME</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#collection">Collection</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-    <section id="shop">
-      <h2 class="title">Our Collection</h2>
-      <div class="grid">
-        <div class="card"><div class="icon">💍</div><h3>Rings</h3><p>Beautiful designs for every occasion.</p></div>
-        <div class="card"><div class="icon">📿</div><h3>Necklaces</h3><p>Elegant pieces to complete your look.</p></div>
-        <div class="card"><div class="icon">⌚</div><h3>Watches</h3><p>Classic and modern timepieces.</p></div>
-        <div class="card"><div class="icon">✨</div><h3>Accessories</h3><p>Stylish details that make a statement.</p></div>
-      </div>
-    </section>
+<section class="hero" id="home">
+<div>
+<h1>Timeless Elegance</h1>
+<p>Premium Jewelry & Watches Made to Make Every Moment Shine.</p>
+<a class="btn" href="#collection">Explore Collection</a>
+</div>
+</section>
 
-    <section class="contact" id="contact">
-      <h2 class="title">Contact Us</h2>
-      <p>For orders and inquiries, contact us on WhatsApp.</p>
-      <br>
-      <a class="btn" href="https://wa.me/923034129407" target="_blank">WhatsApp: 0303 4129407</a>
-    </section>
-  </main>
+<section id="collection">
 
-  <footer>© 2026 Crown & Time — Jewelry & Watches</footer>
+<h2 class="title">Our Collection</h2>
+<p class="subtitle">Discover timeless pieces selected for every occasion.</p>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">⌚</div>
+<h3>Watches</h3>
+<p>Elegant watches combining modern style with timeless design.</p>
+</div>
+
+<div class="card">
+<div class="icon">💍</div>
+<h3>Rings</h3>
+<p>Beautiful rings designed to make your special moments unforgettable.</p>
+</div>
+
+<div class="card">
+<div class="icon">💎</div>
+<h3>Jewelry</h3>
+<p>Premium jewelry crafted to add elegance and shine to your style.</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Accessories</h3>
+<p>Stylish accessories selected to complete your perfect look.</p>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2 class="title">About Crown & Time</h2>
+
+<p>
+At Crown & Time, we believe every piece tells a story.
+Our collection brings together elegant jewelry and timeless watches
+for people who appreciate style, quality and sophistication.
+</p>
+
+<a class="btn" href="#contact">Contact Us</a>
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="title">Get In Touch</h2>
+
+<p>Interested in our collection? Contact us directly on WhatsApp.</p>
+
+<a class="whatsapp"
+href="https://wa.me/923034129407"
+target="_blank">
+WhatsApp: 0303 4129407
+</a>
+
+</section>
+
+<footer>
+© 2026 Crown & Time — Jewelry & Watches
+</footer>
+
 </body>
 </html>
