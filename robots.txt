@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shoaibkhalid984-ai.github.io/Sho-ib-/sitemap.xml
